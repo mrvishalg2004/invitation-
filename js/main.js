@@ -238,3 +238,7 @@ $(document).ready(function() {
         $(this).next('.submenu').slideToggle();
     });
 });
+
+window.addEventListener('click' ,() =>{
+	document.getElementById("song".play();
+})
