@@ -258,9 +258,16 @@
 
 $(document).ready(function() {
     // Toggle submenu visibility on click for mobile
+    $('.sub-submenu').hide(); // Hide the sub-submenu initially
     $('.has-submenu > a').on('click', function(e) {
         e.preventDefault();
         $(this).next('.submenu').slideToggle();
+    });
+
+    // Toggle sub-submenu visibility on click
+    $('.submenu > li:first-child > a').on('click', function(e) {
+        e.preventDefault();
+        $(this).next('.sub-submenu').slideToggle();
     });
 });
 
