@@ -213,7 +213,8 @@
 		$(window).stellar();
 	};
 
-	
+	//start
+
 	$(function(){
 		mobileMenuOutsideClick();
 		parallax();
@@ -226,7 +227,33 @@
 		loaderPage();
 		counter();
 		counterWayPoint();
+	  
+		// Background Music Code
+		var audio = $('#bg-music')[0]; // Get the raw DOM element
+		var audioPlayed = false;
+	  
+		// Function to play audio
+		function playAudio() {
+			if (audio && !audioPlayed) {
+				audio.play().then(function() {
+					console.log('Audio playback started successfully');
+				}).catch(function(error) {
+					console.error('Failed to play audio:', error);
+				});
+				audioPlayed = true;
+			}
+		}
+	  
+		// Play audio when the user interacts with the page
+		$(document).on('click', function() {
+			playAudio();
+		});
 	});
+	
+
+
+	//end
+
 
 
 }());
@@ -239,6 +266,3 @@ $(document).ready(function() {
     });
 });
 
-window.addEventListener('click' ,() =>{
-	document.getElementById("song".play();
-})
