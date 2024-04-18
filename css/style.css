@@ -901,18 +901,7 @@ form label {
   box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
 }
 
-/*size*/
 
-    /* Custom CSS for increasing font size */
-    #fh5co-header .display-tc h2 {
-      font-size: 32px; /* Adjust the font size as needed */
-  }
-
-  #fh5co-header .display-tc h2:last-child {
-      font-size: 24px; /* Adjust the font size as needed */
-  }
-
-/*size*/
 
 #fh5co-counter {
   text-align: center;
