@@ -1839,3 +1839,96 @@ form label {
 }
 /*# sourceMappingURL=style.css.map */
 
+/*responsive code*/
+/* Default styles */
+
+/* Default styles for event section */
+
+/* Default styles for event section */
+#fh5co-event {
+  padding: 4em 0;
+}
+
+#fh5co-event .event-wrap {
+  margin-bottom: 30px;
+  padding: 30px;
+  text-align: center;
+}
+
+#fh5co-event .event-wrap h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#fh5co-event .event-wrap p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Media queries for small devices */
+@media screen and (max-width: 576px) {
+  #fh5co-event .event-wrap {
+    padding: 20px;
+  }
+
+  #fh5co-event .event-wrap h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  #fh5co-event .event-wrap p {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+}
+
+/* Media queries for medium devices */
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  #fh5co-event .event-wrap {
+    padding: 25px;
+  }
+
+  #fh5co-event .event-wrap h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+
+  #fh5co-event .event-wrap p {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+}
+
+/* Media queries for large devices */
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  #fh5co-event .event-wrap {
+    padding: 35px;
+  }
+
+  #fh5co-event .event-wrap h3 {
+    font-size: 26px;
+    margin-bottom: 14px;
+  }
+
+  #fh5co-event .event-wrap p {
+    font-size: 17px;
+    margin-bottom: 12px;
+  }
+}
+
+/* Media queries for extra large devices */
+@media screen and (min-width: 993px) {
+  #fh5co-event .event-wrap {
+    padding: 40px;
+  }
+
+  #fh5co-event .event-wrap h3 {
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+
+  #fh5co-event .event-wrap p {
+    font-size: 18px;
+    margin-bottom: 14px;
+  }
+}
