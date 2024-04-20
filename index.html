@@ -32,6 +32,9 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Engagement" rel="stylesheet">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia+Sans+Condensed" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-CjYGQUh/NKwAJALr6o3u2xVVeEAkfttujbNEJhN0k0KdtzcfrcRkfOTqBk8i7Y2Jf6gVXK98lSBaQO6p8gHZ/g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
 	
 	<!-- clock   -->
 	<link rel="stylesheet" href="css/responsive-clock.css">
@@ -62,13 +65,12 @@
 	</head>
 	<body>
 
-		<audio id="bg-music">
+		<!-- <audio id="bg-music">
 			<source src="images/inst.mp3" type="audio/mpeg">
-			<!-- Add alternative audio formats here if needed -->
+			
 			Your browser does not support the audio element.
 		</audio>
-		
-				
+				 -->
 		  
 
 	<div class="fh5co-loader"></div>
@@ -266,29 +268,38 @@
 
 <!-- photo section end -->
 
+<!--Hightlight section end -->
 
-	<div id="fh5co-services" class="fh5co-section-gray">
-		<div class="container">
-			
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Highlights</h2>
+<!-- Add the hidden div for the video player -->
+<div id="video-popup" class="mfp-hide">
+    <div class="video-container">
+        <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+        <video id="popup-video" controls>
+            <source src="images/compress.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
 
-				</div>
-			</div>
+<!-- Add the video link to the banner image -->
+<div id="fh5co-services" class="fh5co-section-gray">
+    <div class="container">
+        <div class="row animate-box">
+            <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+                <h2>Highlights</h2>
+            </div>
+        </div>
+        <div class="container animate-box">
+            <!-- Add the video link to the banner image -->
+            <div class="fh5co-video fh5co-bg" style="background-image: url(images/bg1.png);">
+                <a href="#video-popup" class="popup-video"><i class="icon-video2"></i></a>
+                <div class="overlay"></div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
-
-				<div class="container animate-box">
-					<div class="fh5co-video fh5co-bg" style="background-image: url(images/bg1.png); ">
-						<a href="#" class="popup-vimeo"><i class="icon-video2"></i></a>
-						<div class="overlay"></div>
-					</div>
-				</div>
-			</div>
-			
-		</div>
-	</div>
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>

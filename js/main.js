@@ -186,6 +186,7 @@
 	// Loading page
 	var loaderPage = function() {
 		$(".fh5co-loader").fadeOut("slow");
+		
 	};
 
 	var counter = function() {
@@ -256,6 +257,7 @@
 
 }());
 
+
 $(document).ready(function() {
     // Toggle submenu visibility on click for mobile
     $('.sub-submenu').hide(); // Hide the sub-submenu initially
@@ -269,5 +271,26 @@ $(document).ready(function() {
         e.preventDefault();
         $(this).next('.sub-submenu').slideToggle();
     });
+
+
+});
+
+$(document).ready(function () {
+	$('.popup-video').magnificPopup({
+		type: 'inline',
+		mainClass: 'mfp-fade',
+		removalDelay: 300,
+		closeBtnInside: false,
+		callbacks: {
+			open: function() {
+				var video = $('#popup-video')[0];
+				video.play(); // Auto play the video when the popup opens
+			},
+			close: function() {
+				var video = $('#popup-video')[0];
+				video.pause(); // Pause the video when the popup closes
+			}
+		}
+	});
 });
 
