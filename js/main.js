@@ -294,7 +294,7 @@ $(document).ready(function () {
 	});
 });
 // Replace 'YOUR_COUNTER_ID' with the ID of your counter
-var url = 'https://api.livecounter.org/counters/8/';
+var url = 'https://api.livecounter.org/counters/1/';
 var firstValue = true;
 
 // Listen to counter updates
