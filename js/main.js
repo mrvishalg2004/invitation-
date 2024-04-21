@@ -293,4 +293,20 @@ $(document).ready(function () {
 		}
 	});
 });
+// Replace 'YOUR_COUNTER_ID' with the ID of your counter
+var url = 'https://api.livecounter.org/counters/8/';
+var firstValue = true;
 
+// Listen to counter updates
+var es = new EventSource(url, { withCredentials: true });
+es.addEventListener('message', function (e) {
+	$('#views').text(e.data);
+	if (firstValue) {
+		firstValue = false;
+		// After receiving initial value, increment counter
+		$.post(url, function () {});
+	} else {
+		// Highlight animation for updates after initial value
+		$('#views-area').effect('highlight', {}, 10000);
+	}
+}, false);

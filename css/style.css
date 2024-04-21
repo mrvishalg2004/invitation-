@@ -1963,3 +1963,30 @@ form label {
   width: 100%;
   height: 100%;
 }
+
+#views-area {
+  font-family: 'Arial', sans-serif; /* Change the font-family as needed */
+  font-size: 14px; /* Adjust the font size for the Total Views text */
+  display: flex;
+  align-items: center;
+}
+
+#total-views {
+  font-size: 12px; /* Adjust the font size for the Total Views text */
+}
+
+#views {
+  margin-left: 10px; /* Adjust the spacing between text and count */
+  font-weight: bold; /* Make the counter font bold */
+}
+
+#views-area h2 {
+  font-family: 'Times New Roman', serif; /* Change the font family for the h2 tag */
+  font-size: 18px; /* Adjust the font size for the h2 tag */
+}
+
+@media only screen and (max-width: 768px) {
+  #views-area {
+    font-size: 12px; /* Adjust font size for smaller screens */
+  }
+}
