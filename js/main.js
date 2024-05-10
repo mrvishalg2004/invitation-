@@ -297,7 +297,7 @@ $(document).ready(function () {
 // my background image code is start 
 var backgroundImages = [
 	"url(https://ibb.co/7S8zRr1)",
-	"url(https://example.com/images/3.jpg)",
+	"url(https://ibb.co/SmxZy3B)",
 	"url(https://example.com/images/7.jpg)",
 	"url(https://example.com/images/4.jpg)"
   ];
