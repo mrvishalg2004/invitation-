@@ -295,16 +295,23 @@ $(document).ready(function () {
 });
 
 // my background image code is start 
-var backgroundImages = ["url(images/1.jpg)", "url(images/3.jpg)", "url(images/7.jpg)", "url(images/4.jpg)"];
-var currentImageIndex = 0;
+var backgroundImages = [
+	"url(https://ibb.co/7S8zRr1)",
+	"url(https://example.com/images/3.jpg)",
+	"url(https://example.com/images/7.jpg)",
+	"url(https://example.com/images/4.jpg)"
+  ];
+  var currentImageIndex = 0;
+  
+  function changeBackgroundImage() {
+	document.getElementById("fh5co-header").style.backgroundImage = backgroundImages[currentImageIndex];
+	currentImageIndex = (currentImageIndex + 1) % backgroundImages.length;
+  }
+  
+  // Change background image every 5 seconds
+  setInterval(changeBackgroundImage, 3000);
+  
 
-function changeBackgroundImage() {
-  document.getElementById("fh5co-header").style.backgroundImage = backgroundImages[currentImageIndex];
-  currentImageIndex = (currentImageIndex + 1) % backgroundImages.length;
-}
-
-// Change background image every 5 seconds
-setInterval(changeBackgroundImage, 3000);
 
 // my background image code is end 
 
