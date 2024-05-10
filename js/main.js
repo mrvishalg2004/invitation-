@@ -312,7 +312,6 @@ function changeBackgroundImage() {
 // Change background image every 3 seconds
 setInterval(changeBackgroundImage, 3000);
 
-
 // my background image code is end 
 
 // Replace 'YOUR_COUNTER_ID' with the ID of your counter
