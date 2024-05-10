@@ -296,21 +296,21 @@ $(document).ready(function () {
 
 // my background image code is start 
 var backgroundImages = [
-	"url(https://ibb.co/7S8zRr1)",
-	"url(https://ibb.co/SmxZy3B)",
-	"url(https://example.com/images/7.jpg)",
-	"url(https://example.com/images/4.jpg)"
-  ];
-  var currentImageIndex = 0;
-  
-  function changeBackgroundImage() {
-	document.getElementById("fh5co-header").style.backgroundImage = backgroundImages[currentImageIndex];
-	currentImageIndex = (currentImageIndex + 1) % backgroundImages.length;
-  }
-  
-  // Change background image every 5 seconds
-  setInterval(changeBackgroundImage, 3000);
-  
+    "url(/images/1.jpg)",
+    "url(/images/3.jpg)",
+    "url(/images/7.jpg)",
+    "url(/images/4.jpg)"
+];
+var currentImageIndex = 0;
+var fh5coHeader = document.getElementById("fh5co-header");
+
+function changeBackgroundImage() {
+    fh5coHeader.style.backgroundImage = backgroundImages[currentImageIndex];
+    currentImageIndex = (currentImageIndex + 1) % backgroundImages.length;
+}
+
+// Change background image every 3 seconds
+setInterval(changeBackgroundImage, 3000);
 
 
 // my background image code is end 
