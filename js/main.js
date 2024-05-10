@@ -295,7 +295,7 @@ $(document).ready(function () {
 });
 
 // my background image code is start 
-var backgroundImages = ["url(images/compress/1.jpg)", "url(images/compress/3.jpg)", "url(images/compress/7.jpg)", "url(images/compress/4.jpg)"]; // Add paths to your images
+var backgroundImages = ["url(images/1.jpg)", "url(images/3.jpg)", "url(images/7.jpg)", "url(images/4.jpg)"]; // Add paths to your images
 var currentImageIndex = 0;
 
 function changeBackgroundImage() {
