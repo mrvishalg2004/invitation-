@@ -314,6 +314,20 @@ setInterval(changeBackgroundImage, 3000);
 
 // my background image code is end 
 
+// my gallary code start 
+const slideshow = document.getElementById('slideshow');
+const images = slideshow.getElementsByTagName('img');
+let currentIndex = 0;
+
+function nextSlide() {
+    currentIndex = (currentIndex + 1) % images.length;
+    slideshow.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
+
+setInterval(nextSlide, 3000);
+
+//my gallary code end
+
 // Replace 'YOUR_COUNTER_ID' with the ID of your counter
 var url = 'https://api.livecounter.org/counters/1/';
 var firstValue = true;

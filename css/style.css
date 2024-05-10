@@ -856,6 +856,30 @@ form label {
 
 /* my background image code is end */
 
+/* my gallary code start */
+
+#slideshow-container {
+  overflow: hidden;
+  position: relative;
+  max-width: 100%; /* Ensure the slideshow container fits its parent */
+  height: auto; /* Allow the container to adjust its height based on the aspect ratio of the images */
+}
+
+#slideshow {
+  display: flex;
+  transition: transform 1s ease;
+}
+
+#slideshow img {
+  flex: 0 0 100%; /* Each image takes up the full width */
+  max-width: 100%; /* Ensure images don't exceed their parent container */
+  height: auto; /* Allow images to adjust their height based on the aspect ratio */
+}
+
+
+
+/* my gallary code end */
+
 #fh5co-header .display-tc,
 #fh5co-counter .display-tc,
 .fh5co-cover .display-tc {
