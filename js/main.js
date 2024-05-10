@@ -296,10 +296,10 @@ $(document).ready(function () {
 
 // my background image code is start 
 var backgroundImages = [
-    "url(/images/1.jpg)",
-    "url(/images/3.jpg)",
-    "url(/images/7.jpg)",
-    "url(/images/4.jpg)"
+    "url(/images/1.webp)",
+    "url(/images/3.webp)",
+    "url(/images/7.webp)",
+    "url(/images/4.webp)"
 ];
 var currentImageIndex = 0;
 var fh5coHeader = document.getElementById("fh5co-header");
