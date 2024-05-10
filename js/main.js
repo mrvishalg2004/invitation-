@@ -293,6 +293,21 @@ $(document).ready(function () {
 		}
 	});
 });
+
+// my background image code is start 
+var backgroundImages = ["url(images/compress/7.jpg)", "url(images/compress/8.jpg)", , "url(images/compress/1.jpg)"]; // Add paths to your images
+var currentImageIndex = 0;
+
+function changeBackgroundImage() {
+  document.getElementById("fh5co-header").style.backgroundImage = backgroundImages[currentImageIndex];
+  currentImageIndex = (currentImageIndex + 1) % backgroundImages.length;
+}
+
+// Change background image every 5 seconds
+setInterval(changeBackgroundImage, 3000);
+
+// my background image code is end 
+
 // Replace 'YOUR_COUNTER_ID' with the ID of your counter
 var url = 'https://api.livecounter.org/counters/1/';
 var firstValue = true;

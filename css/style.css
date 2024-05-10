@@ -828,6 +828,24 @@ form label {
   font-weight: normal !important;
 }
 
+/* my background image code is start */
+
+#fh5co-header {
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9; /* Adjust the opacity value as needed */
+  transition: opacity 0.5s ease; /* Add transition for smooth opacity change */
+}
+
+.overlay {
+  background-color: #000000; /* Overlay color */
+  opacity: 1.9; /* Overlay opacity */
+}
+
+
+
+/* my background image code is end */
+
 #fh5co-header .display-tc,
 #fh5co-counter .display-tc,
 .fh5co-cover .display-tc {
