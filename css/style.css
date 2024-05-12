@@ -828,30 +828,6 @@ form label {
   font-weight: normal !important;
 }
 
-/* Header text start */
-.draw-text {
-  display: inline-block;
-  overflow: hidden;
-  border-right: .15em solid rgba(255, 255, 255, 0); /* Adjust border properties for desired drawing effect */
-  white-space: nowrap; /* Keep text on a single line */
-  margin: 0;
-  padding: 0;
-  animation: draw 5s steps(40) forwards; /* Adjust animation duration and steps as needed */
-  cursor: none; /* Hide the cursor initially */
-}
-
-@keyframes draw {
-  0% {
-      width: 0;
-  }
-  100% {
-      width: 100%;
-      cursor: auto; /* Reset the cursor */
-  }
-}
-
-/*header text end*/
-
 /* my background image code is start */
 
 #fh5co-header {
