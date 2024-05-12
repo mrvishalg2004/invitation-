@@ -334,7 +334,7 @@ setInterval(nextSlide, 5000); // Increased interval for a smoother effect
 //my gallary code end
 
 // Replace 'YOUR_COUNTER_ID' with the ID of your counter
-var url = 'https://api.livecounter.org/counters/1/';
+var url = 'https://api.livecounter.org/counters/1';
 var firstValue = true;
 
 // Listen to counter updates

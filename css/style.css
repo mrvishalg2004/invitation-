@@ -844,6 +844,18 @@ form label {
   /* Your overlay styles */
 }
 
+@media (max-width: 767px) {
+  /* Adjustments for smaller screens */
+  .col-md-2 {
+      display: none; /* Hide the Instagram icon on smaller screens */
+  }
+
+  .col-md-8 {
+      width: 100%; /* Make the text content full width on smaller screens */
+  }
+}
+
+
 
 /* my background image code is end */
 
