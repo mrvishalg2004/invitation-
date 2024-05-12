@@ -304,17 +304,22 @@ var backgroundImages = [
 var currentImageIndex = 0;
 var fh5coHeader = document.getElementById("fh5co-header");
 
+// Load the first image immediately
+fh5coHeader.style.backgroundImage = backgroundImages[currentImageIndex];
+
 function changeBackgroundImage() {
-    fh5coHeader.style.backgroundImage = backgroundImages[currentImageIndex];
     currentImageIndex = (currentImageIndex + 1) % backgroundImages.length;
+    fh5coHeader.style.backgroundImage = backgroundImages[currentImageIndex];
 }
 
 // Change background image every 3 seconds
 setInterval(changeBackgroundImage, 3000);
 
+
 // my background image code is end 
 
 // my gallary code start 
+
 const slideshow = document.getElementById('slideshow');
 const images = slideshow.getElementsByTagName('img');
 let currentIndex = 0;
@@ -324,7 +329,7 @@ function nextSlide() {
     slideshow.style.transform = `translateX(-${currentIndex * 100}%)`;
 }
 
-setInterval(nextSlide, 3000);
+setInterval(nextSlide, 5000); // Increased interval for a smoother effect
 
 //my gallary code end
 
