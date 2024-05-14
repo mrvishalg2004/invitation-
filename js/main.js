@@ -295,25 +295,25 @@ $(document).ready(function () {
 });
 
 // my background image code is start 
-var backgroundImages = [
-    "url(/images/1.webp)",
-    "url(/images/3.webp)",
-    "url(/images/7.webp)",
-    "url(/images/4.webp)"
-];
-var currentImageIndex = 0;
-var fh5coHeader = document.getElementById("fh5co-header");
+// var backgroundImages = [
+//     "url(/images/1.webp)",
+//     "url(/images/3.webp)",
+//     "url(/images/7.webp)",
+//     "url(/images/4.webp)"
+// ];
+// var currentImageIndex = 0;
+// var fh5coHeader = document.getElementById("fh5co-header");
 
-// Load the first image immediately
-fh5coHeader.style.backgroundImage = backgroundImages[currentImageIndex];
+// // Load the first image immediately
+// fh5coHeader.style.backgroundImage = backgroundImages[currentImageIndex];
 
-function changeBackgroundImage() {
-    currentImageIndex = (currentImageIndex + 1) % backgroundImages.length;
-    fh5coHeader.style.backgroundImage = backgroundImages[currentImageIndex];
-}
+// function changeBackgroundImage() {
+//     currentImageIndex = (currentImageIndex + 1) % backgroundImages.length;
+//     fh5coHeader.style.backgroundImage = backgroundImages[currentImageIndex];
+// }
 
-// Change background image every 3 seconds
-setInterval(changeBackgroundImage, 3000);
+// // Change background image every 3 seconds
+// setInterval(changeBackgroundImage, 3000);
 
 
 // my background image code is end 
