@@ -873,7 +873,7 @@ form label {
   background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity (last value) as needed */
   z-index: 1;
   pointer-events: none; /* Ensures that the overlay does not block mouse events */
-  opacity: 0;
+  opacity: 0.9;
   transition: opacity 1s ease; /* Transition effect for overlay */
 }
 @media (max-width: 768px) {
