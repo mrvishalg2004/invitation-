@@ -294,6 +294,33 @@ $(document).ready(function () {
 	});
 });
 
+//counter code start 
+document.addEventListener('DOMContentLoaded', function() {
+    // Check if 'refreshCount' exists in local storage
+    let refreshCount = localStorage.getItem('refreshCount') || 0;
+    let viewsCount = localStorage.getItem('viewsCount') || 0;
+
+    // If the views count is not initialized or less than 10870, set it to 10870
+    if (viewsCount < 10870) {
+        viewsCount = 10870;
+    }
+
+    // Update the views count on the page
+    document.getElementById('views').textContent = viewsCount;
+
+    // Increment the refresh count on each page refresh
+    localStorage.setItem('refreshCount', ++refreshCount);
+
+    // If the refresh count is 2, increment the views count and reset the refresh count
+    if (refreshCount >= 2) {
+        localStorage.setItem('viewsCount', ++viewsCount);
+        localStorage.setItem('refreshCount', 0); // Reset the refresh count
+    }
+});
+
+
+//counter code end
+
 // my background image code is start 
 // var backgroundImages = [
 //     "url(/images/1.webp)",
@@ -343,20 +370,23 @@ setInterval(nextSlide, 5000);
 
 //my gallary code end
 
+//counter code start
 // Replace 'YOUR_COUNTER_ID' with the ID of your counter
-var url = 'https://api.livecounter.org/counters/1';
-var firstValue = true;
+// var url = 'https://api.livecounter.org/counters/1';
+// var firstValue = true;
 
 // Listen to counter updates
-var es = new EventSource(url, { withCredentials: true });
-es.addEventListener('message', function (e) {
-	$('#views').text(e.data);
-	if (firstValue) {
-		firstValue = false;
-		// After receiving initial value, increment counter
-		$.post(url, function () {});
-	} else {
-		// Highlight animation for updates after initial value
-		$('#views-area').effect('highlight', {}, 10000);
-	}
-}, false);
+// var es = new EventSource(url, { withCredentials: true });
+// es.addEventListener('message', function (e) {
+// 	$('#views').text(e.data);
+// 	if (firstValue) {
+// 		firstValue = false;
+// 		// After receiving initial value, increment counter
+// 		$.post(url, function () {});
+// 	} else {
+// 		// Highlight animation for updates after initial value
+// 		$('#views-area').effect('highlight', {}, 10000);
+// 	}
+// }, false);
+//counter code end
+
