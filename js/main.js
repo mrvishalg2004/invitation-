@@ -319,17 +319,27 @@ $(document).ready(function () {
 // my background image code is end 
 
 // my gallary code start 
-
 const slideshow = document.getElementById('slideshow');
 const images = slideshow.getElementsByTagName('img');
 let currentIndex = 0;
 
 function nextSlide() {
     currentIndex = (currentIndex + 1) % images.length;
+    slideshow.style.transition = 'transform 1s ease-in-out';
     slideshow.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+    // If the current image is the last one, reset to the first image after 5 seconds
+    if (currentIndex === images.length - 1) {
+        setTimeout(() => {
+            slideshow.style.transition = 'none';
+            slideshow.style.transform = `translateX(0)`;
+            currentIndex = 0;
+        }, 5000); // Delay reset to first image after 5 seconds
+    }
 }
 
-setInterval(nextSlide, 5000); // Increased interval for a smoother effect
+setInterval(nextSlide, 5000);
+
 
 //my gallary code end
 
