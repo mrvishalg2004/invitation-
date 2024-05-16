@@ -300,7 +300,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let refreshCount = localStorage.getItem('refreshCount') || 0;
     let viewsCount = localStorage.getItem('viewsCount') || 0;
 
-    // If the views count is not initialized or less than 10870, set it to 10870
+  
     if (viewsCount < 10870) {
         viewsCount = 10870;
     }
