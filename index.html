@@ -67,6 +67,16 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 
+	<!-- Include Magnific Popup CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+
+<!-- Include jQuery (required by Magnific Popup) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Include Magnific Popup JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+
 	</head>
 	<body>
 
@@ -175,11 +185,11 @@
 
 <div id="video-popup" class="mfp-hide">
     <div class="video-container">
-        <button title="Close (Esc)" type="button" class="mfp-close">×</button>
-        <video id="popup-video" controls>
-            <source src="images/prewedding.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+        <div id="youtube-video-container">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/VyHJJ4g_-F8?si=E2FATXDct6mVRxk4&modestbranding=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        </div>
+        
     </div>
 </div>
 
@@ -193,13 +203,42 @@
         </div>
         <div class="container animate-box">
             <!-- Add the video link to the banner image -->
-            <div class="fh5co-video fh5co-bg" style="background-image: url(images/save.png);">
+            <div class="fh5co-video fh5co-bg" style="background-image: url(images/thubnail.jpg);">
                 <a href="#video-popup" class="popup-video"><i class="icon-video2"></i></a>
                 <div class="overlay"></div>
             </div>
         </div>
     </div>
 </div>
+
+
+<!-- <div id="video-popup" class="mfp-hide">
+    <div class="video-container">
+        <button title="Close (Esc)" type="button" class="mfp-close">×</button>
+        <video id="popup-video" controls>
+            <source src="images/prewedding.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div> -->
+
+<!-- Add the video link to the banner image -->
+<!-- <div id="fh5co-services" class="fh5co-section-gray">
+    <div class="container">
+        <div class="row animate-box">
+            <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+                <h2>Highlights</h2>
+            </div>
+        </div>
+        <div class="container animate-box"> -->
+            <!-- Add the video link to the banner image -->
+            <!-- <div class="fh5co-video fh5co-bg" style="background-image: url(images/save.png);">
+                <a href="#video-popup" class="popup-video"><i class="icon-video2"></i></a>
+                <div class="overlay"></div>
+            </div>
+        </div>
+    </div>
+</div> -->
 
 
 	<div id="fh5co-event" class="fh5co-bg">

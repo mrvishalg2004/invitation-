@@ -275,24 +275,32 @@ $(document).ready(function() {
 
 });
 
-$(document).ready(function () {
-	$('.popup-video').magnificPopup({
-		type: 'inline',
-		mainClass: 'mfp-fade',
-		removalDelay: 300,
-		closeBtnInside: false,
-		callbacks: {
-			open: function() {
-				var video = $('#popup-video')[0];
-				video.play(); // Auto play the video when the popup opens
-			},
-			close: function() {
-				var video = $('#popup-video')[0];
-				video.pause(); // Pause the video when the popup closes
-			}
-		}
-	});
+// hightlight
+
+$(document).ready(function() {
+    $('.popup-video').magnificPopup({
+        type: 'inline',
+        midClick: true,
+        callbacks: {
+            open: function() {
+                // Insert YouTube iframe when the modal is opened
+                $('#youtube-video-container').html('<iframe width="560" height="315" src="https://www.youtube.com/embed/VyHJJ4g_-F8?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
+                
+                // Bind click event to custom close button
+                $('.custom-close').on('click', function() {
+                    $.magnificPopup.close();
+                });
+            },
+            close: function() {
+                // Remove YouTube iframe when the modal is closed
+                $('#youtube-video-container').html('');
+            }
+        }
+    });
 });
+
+
+// hinghtlight 
 
 //counter code start 
 document.addEventListener('DOMContentLoaded', function() {

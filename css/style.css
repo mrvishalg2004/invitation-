@@ -2012,21 +2012,47 @@ form label {
 }
 
  /* Responsive video container */
- .video-container {
+ /* .video-container {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio (change this value as needed) */
+  padding-bottom: 56.25%; 
   padding-top: 30px;
   height: 0;
   overflow: hidden;
-}
+} */
 
-.video-container video {
+/* .video-container video {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+} */
+
+#video-popup .video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.8);
 }
+
+#youtube-video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 80vw; /* Adjust as needed */
+  max-height: 80vh; /* Adjust as needed */
+}
+
+#youtube-video-container iframe {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+}
+
 
 #views-area {
   font-family: 'Arial', sans-serif; /* Change the font-family as needed */
