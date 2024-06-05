@@ -284,7 +284,7 @@ $(document).ready(function() {
         callbacks: {
             open: function() {
                 // Insert YouTube iframe when the modal is opened
-                $('#youtube-video-container').html('<iframe width="560" height="315" src="https://www.youtube.com/embed/VyHJJ4g_-F8?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
+                $('#youtube-video-container').html('<iframe width="600" height="600" src="https://www.youtube.com/embed/VyHJJ4g_-F8?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
                 
                 // Bind click event to custom close button
                 $('.custom-close').on('click', function() {
